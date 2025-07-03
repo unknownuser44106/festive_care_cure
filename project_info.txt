@@ -1,0 +1,12 @@
+# Flutter Setup Info
+
+Flutter version: 3.24.4
+Dart version: 3.5.4
+Java version: 19.0.2
+Gradle version: 8.6
+Kotlin: 1.9.20
+Android Studio: 2024.2
+VS Code: 1.101.2
+OS: Windows 11
+
+Run `flutter doctor -v` for more system info.

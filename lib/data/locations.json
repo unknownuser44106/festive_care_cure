@@ -1,0 +1,33 @@
+{
+    "Andhra Pradesh": {
+      "Anantapur": {
+        "Hindupur": ["515201", "515202", "515203"],
+        "Dharmavaram": ["515671", "515672", "515673"]
+      },
+      "Chittoor": {
+        "Tirupati": ["517501", "517502"],
+        "Madanapalle": ["517325", "517326"]
+      }
+    },
+    "Karnataka": {
+      "Bangalore Urban": {
+        "North": ["560001", "560002"],
+        "South": ["560010", "560011"]
+      },
+      "Kolar": {
+        "Malur": ["563101", "563102"],
+        "Bangarpet": ["563114", "563115"]
+      }
+    },
+    "Tamil Nadu": {
+      "Chennai": {
+        "North Chennai": ["600001", "600002"],
+        "South Chennai": ["600010", "600011"]
+      },
+      "Coimbatore": {
+        "Pollachi": ["642001", "642002"],
+        "Mettupalayam": ["641301", "641302"]
+      }
+    }
+  }
+  

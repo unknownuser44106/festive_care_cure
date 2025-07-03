@@ -1,0 +1,34 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "festive-cure-care",
+          "appId": "1:863701601139:android:cb2534265d27d8b55e1306",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "festive-cure-care",
+          "configurations": {
+            "android": "1:863701601139:android:cb2534265d27d8b55e1306",
+            "ios": "1:863701601139:ios:6ea791cba82924c65e1306",
+            "macos": "1:863701601139:ios:6ea791cba82924c65e1306",
+            "web": "1:863701601139:web:5cce4c2db7f973db5e1306",
+            "windows": "1:863701601139:web:ac5f5454d9d0fd325e1306"
+          }
+        }
+      }
+    }
+  },
+  "emulators": {
+    "functions": {
+      "port": 5001
+    },
+    "ui": {
+      "enabled": true
+    },
+    "singleProjectMode": true
+  }
+}

@@ -1,0 +1,175 @@
+// // apply plugin: 'com.android.application'
+// // apply plugin: 'com.google.gms.google-services'
+
+// // plugins {
+// //     id "com.android.application"
+// //     id "kotlin-android"
+// //     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+// //     id "dev.flutter.flutter-gradle-plugin"
+// // }
+
+// // android {
+// //     namespace = "com.example.festive_care_cure"
+// //     compileSdk = flutter.compileSdkVersion
+// //     ndkVersion = flutter.ndkVersion
+
+// //     compileOptions {
+// //         sourceCompatibility = JavaVersion.VERSION_1_8
+// //         targetCompatibility = JavaVersion.VERSION_1_8
+// //     }
+
+// //     kotlinOptions {
+// //         jvmTarget = JavaVersion.VERSION_1_8
+// //     }
+
+// //     defaultConfig {
+// //         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+// //         applicationId = "com.example.festive_care_cure"
+// //         // You can update the following values to match your application needs.
+// //         // For more information, see: https://flutter.dev/to/review-gradle-config.
+// //         minSdk = flutter.minSdkVersion
+// //         targetSdk = flutter.targetSdkVersion
+// //         versionCode = flutter.versionCode
+// //         versionName = flutter.versionName
+// //     }
+
+// //     buildTypes {
+// //         release {
+// //             // TODO: Add your own signing config for the release build.
+// //             // Signing with the debug keys for now, so `flutter run --release` works.
+// //             signingConfig = signingConfigs.debug
+// //         }
+// //     }
+// // }
+
+// // flutter {
+// //     source = "../.."
+// // }
+
+// plugins {
+//     id "com.android.application"
+//     id "kotlin-android"
+//     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+//     id "dev.flutter.flutter-gradle-plugin"
+
+//     // Add the Google services Gradle plugin
+//     id "com.google.gms.google-services"
+// }
+
+// android {
+//     namespace = "com.example.festive_care_cure"
+//     compileSdk = flutter.compileSdkVersion
+//     ndkVersion = flutter.ndkVersion
+
+//     compileOptions {
+        
+//         sourceCompatibility = JavaVersion.VERSION_1_8
+//         targetCompatibility = JavaVersion.VERSION_1_8
+//     }
+
+//     kotlinOptions {
+//         jvmTarget = JavaVersion.VERSION_1_8
+//     }
+
+//     defaultConfig {
+//         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+//         applicationId = "com.example.festive_care_cure"
+        
+//         minSdk = flutter.minSdkVersion
+//         targetSdk = flutter.targetSdkVersion
+//         versionCode = flutter.versionCode
+//         versionName = flutter.versionName
+//     }
+
+//     buildTypes {
+//         release {
+//             // TODO: Add your own signing config for the release build.
+//             // Signing with the debug keys for now, so `flutter run --release` works.
+//             signingConfig = signingConfigs.debug
+//         }
+//     }
+// }
+
+// flutter {
+//     source = "../.."
+// }
+
+// dependencies {
+//     // Import the Firebase BoM (Bill of Materials) to manage Firebase SDK versions
+//     implementation platform('com.google.firebase:firebase-bom:33.6.0')
+
+//     // Add Firebase Analytics dependency
+//     implementation 'com.google.firebase:firebase-analytics'
+
+//     // Add any other Firebase dependencies as needed
+//     // For example, for Firebase Authentication:
+//     // implementation 'com.google.firebase:firebase-auth'
+
+//     // For Firebase Firestore:
+//     // implementation 'com.google.firebase:firebase-firestore'
+// }
+
+
+
+plugins {
+    id "com.android.application"
+    id 'org.jetbrains.kotlin.android'
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services" // Firebase plugin
+
+}
+
+android {
+    compileSdk 34 // Targeting the latest version for compatibility
+    namespace = "com.example.festive_care_cure"
+    ndkVersion = flutter.ndkVersion
+
+    defaultConfig {
+        applicationId = "com.example.festive_care_cure"
+        minSdkVersion 23 // Ensures compatibility with most devices
+        // targetSdkVersion 34
+        targetSdkVersion = flutter.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        // Enable MultiDex for large dependencies like Firebase
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig = signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+         sourceCompatibility  JavaVersion.VERSION_19
+         targetCompatibility  JavaVersion.VERSION_19
+    }
+
+    kotlinOptions {
+        // jvmTarget = "1.8"
+        jvmTarget= JavaVersion.VERSION_19
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:33.6.0') // Firebase BOM for version management
+
+    implementation 'com.google.firebase:firebase-analytics'
+    //implementation 'com.google.firebase:firebase-analytics:21.3.0'
+    //implementation 'com.google.firebase:firebase-auth:22.0.0'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+    // implementation 'com.google.firebase:firebase-database'
+    //implementation 'com.google.firebase:firebase-firestore:24.4.0'
+    implementation 'androidx.multidex:multidex:2.0.1' // Required for MultiDex
+}
+apply plugin: 'com.google.gms.google-services'

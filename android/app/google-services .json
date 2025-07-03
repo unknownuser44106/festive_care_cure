@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "863701601139",
+    "project_id": "festive-cure-care",
+    "storage_bucket": "festive-cure-care.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:863701601139:android:cb2534265d27d8b55e1306",
+        "android_client_info": {
+          "package_name": "com.example.festive_care_cure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "863701601139-8sv8n5el4531fce2mbnj48sf7ekgk0je.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.festive_care_cure",
+            "certificate_hash": "ed3b7cac9313ef97f3818c061f681a5ae566f6c8"
+          }
+        },
+        {
+          "client_id": "863701601139-i5k762nc18ms9det3dru7q05pnq3gttl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ1IjGbEaQCrXUI0RK-eV38oi5p7j0AO4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "863701601139-i5k762nc18ms9det3dru7q05pnq3gttl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
