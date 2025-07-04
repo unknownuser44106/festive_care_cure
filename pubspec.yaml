@@ -139,7 +139,7 @@ flutter:
     - assets/picture/tpacked.jpeg
 
 
-    #- assets/.env # path to your .env
+
     # - assets/.env
     
   # To add assets to your application, add an assets section, like this:

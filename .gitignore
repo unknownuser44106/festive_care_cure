@@ -39,9 +39,12 @@ app.*.map.json
 
 # Android Studio will place build artifacts here
 
+.env
+assets/.env
+docs/assets/assets/.env
 
 /android/app/debug
 /android/app/profile
 /android/app/release
-assets/.env
+
 
