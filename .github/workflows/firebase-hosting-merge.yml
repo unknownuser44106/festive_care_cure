@@ -68,4 +68,4 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_FESTIVE_CURE_CARE }}"
           channelId: live
-          projectId: festive-cure-care
+          projectId: festive-care-cure-69ee4
