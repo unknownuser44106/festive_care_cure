@@ -35,7 +35,7 @@
 #           projectId: festive-cure-care
 #           # projectId: festive-care-cure-69ee4
           
-name: Deploy to Firebase Hosting
+name: Deploy to Firebase Hosting on Merge
 
 on:
   push:
@@ -43,22 +43,23 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo
+      - name: Checkout source
         uses: actions/checkout@v3
 
-      - name: Set up Flutter
+      - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.13.0'  # You can change to your version
+          flutter-version: '3.13.0'  # or your version
+          channel: "stable"
 
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Build web
+      - name: Build Flutter web
         run: flutter build web
 
       - name: Deploy to Firebase Hosting
@@ -67,4 +68,4 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_FESTIVE_CURE_CARE }}"
           channelId: live
-          projectId: festive-care-cure-69ee4
+          projectId: festive-cure-care
