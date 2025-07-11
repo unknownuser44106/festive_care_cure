@@ -300,8 +300,8 @@ class _PaymentPageState extends State<PaymentPage> {
               },
             ),
             RadioListTile(
-              title: const Text('Cash on Delivery'),
-              value: 'Cash on Delivery',
+              title: const Text('COD'),
+              value: 'COD',
               groupValue: selectedPaymentMethod,
               onChanged: (value) {
                 setState(() {
@@ -333,7 +333,7 @@ class _PaymentPageState extends State<PaymentPage> {
   }
 
   void _processPayment(BuildContext context) async {
-    if (selectedPaymentMethod == 'PhonePe') {
+    if (selectedPaymentMethod == 'Netbanking') {
       var options = {
         'key': 'rzp_test_vYtjhf4Ri2Wafu', // Replace with your Razorpay test key
         'amount': (widget.totalAmount * 100).toInt(), // in paise
