@@ -9,6 +9,8 @@
       {
         "html-has-lang": "off"
       }
-    ]
+    ],
+    "disown-opener": "off",
+    "manifest-file-extension": "off"
   }
 }

@@ -33,6 +33,29 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyD-eorNg87Ku0sL7ePTLNGd4onrxadXfdQ",
+    authDomain: "festive-cure-care.firebaseapp.com",
+    projectId: "festive-cure-care",
+    storageBucket: "festive-cure-care.firebasestorage.app",
+    messagingSenderId: "863701601139",
+    appId: "1:863701601139:web:5cce4c2db7f973db5e1306",
+    measurementId: "G-R941TCE6TD"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

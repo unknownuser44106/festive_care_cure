@@ -17,5 +17,5 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FESTIVE_CARE_CURE_69EE4 }}
-          projectId: festive-care-cure-69ee4
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FESTIVE_CURE_CARE }}
+          projectId: festive-cure-care
