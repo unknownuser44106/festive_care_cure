@@ -290,8 +290,8 @@ class _PaymentPageState extends State<PaymentPage> {
               },
             ),
             RadioListTile(
-              title: const Text('PhonePe'),
-              value: 'PhonePe',
+              title: const Text('Netbanking'),
+              value: 'Netbanking',
               groupValue: selectedPaymentMethod,
               onChanged: (value) {
                 setState(() {
