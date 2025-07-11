@@ -59,7 +59,7 @@ class AppDrawer extends StatelessWidget {
           _buildListTile(
             context,
             icon: Icons.shopping_bag,
-            title: 'Orders',
+            title: 'Order',
             onTap: () {
               Navigator.push(
                 context,
