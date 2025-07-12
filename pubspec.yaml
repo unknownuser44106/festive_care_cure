@@ -83,6 +83,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
+    - assets/.env
     - assets/logos/
     - assets/icons/
     - assets/picture/login pic.jpeg
@@ -140,7 +141,7 @@ flutter:
 
 
 
-    - assets/.env
+    
     
   # To add assets to your application, add an assets section, like this:
   # assets:
